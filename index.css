@@ -1,0 +1,82 @@
+*{
+    transition: 0.5s;
+}
+body{
+    font-family:Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    height: 90vh;
+    background-color: #f0f2f5;
+}
+.form{
+    width: 90%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.form-child{
+    width: 40%;
+    border: solid black 1px;
+    padding: 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 10px;
+    background-color: white;
+}
+input, button{
+    font-size: 20px;
+    width: 100%;
+    padding: 10px
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+    width: 100%;
+}
+button, a{
+    width: 50%;
+    cursor: pointer;
+}
+span{
+    color: red;
+}
+.controls{
+    border-radius: 10px;
+    border: 1px solid black;
+}
+@media screen and (max-width:991px) {
+    .button{
+        flex-direction: column;
+        gap: 10px;
+    }
+    button, a{
+        width: 100%;
+    }
+    .loginform-child{
+        width: 90%;
+        border: solid black 1px;
+        padding: 30px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .form-child{
+        width: 90%;
+    }
+}
+@media screen and (max-width:320px) {
+    .form-child{
+        width: 80%;
+    }
+}

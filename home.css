@@ -1,0 +1,363 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    transition: 0.1s;
+}
+h1{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-X: hidden;
+}
+.nav{
+    width:auto;
+    height: auto;
+    border: solid black 1px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    margin: 0 auto;
+    z-index: 2;
+    box-shadow: 0px 0px 5px 1px;
+}
+.left{
+    display: flex;
+    justify-content: flex-start;
+    width: 30%;
+}
+.right{
+    display: flex;
+    justify-content: flex-end;
+    width: 70%;
+    flex-direction: row;
+    gap: 10px;
+}
+.nav button{
+    padding: 10px;
+    width: 150px;
+    cursor: pointer;
+}
+.home-body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.content{
+    width: 60%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+.content-home{
+    width:60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+}
+.post{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.post textarea{
+    width: 100%;
+    font-size: 20px;
+}
+.post-buttons{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
+}
+.post-buttons button{
+    padding: 10px;
+    width: 150px;
+    cursor: pointer;
+}
+.fileupload{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+.posts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+.user-post{
+    padding: 10px;
+    width: 95%;
+    border: solid black 1px;
+    flex-direction: row;
+    display: none;
+    border-radius: 10px 10px 10px 10px;
+}
+.post-info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: justify;
+}
+.post-time{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.post-info img:hover{
+    cursor: pointer;
+}
+.profile{
+    width:90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid black;
+    gap: 10px;
+}
+.profile-controls{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+}
+.profile-controls button{
+    padding: 10px;
+    cursor: pointer;
+}
+.profile-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+    border: 10px rgb(163, 163, 163) solid;
+}
+.cover-image{
+    width: 100%;
+}
+.imageprofile{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.profile-image button{
+    padding: 5px;
+}
+.profile-info{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 20px;
+    justify-content: center;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 20px;
+}
+.details input{
+    padding: 10px;
+    font-size: 15px;
+}
+.load-more{
+    padding: 10px;
+    cursor: pointer;
+}
+.section2{
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    justify-content: center;
+    gap: 10px;
+}
+.more-info{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: fit-content;
+    gap: 10px;
+}
+.minfo-child{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border: solid black 1px;
+    border-radius: 10px 10px 10px 10px;
+}
+.error{
+    color: red;
+}
+.success{
+    color: green;
+}
+.img{
+    width:140px; 
+    height:140px; 
+    object-fit: cover;
+    margin: 0 auto;
+    display: none;
+    cursor: pointer;
+}
+.moreinfo-mobile{
+    display: none;
+}
+.profilepic{
+    height: 38px;
+    width: 38px;
+    border: solid rgb(0, 120, 199) 2px;
+    border-radius: 50%;
+}
+.username{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+}
+.music{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.icon{
+    width: 100%;
+    height: 100%;
+}
+.right button, .left button{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(224, 223, 223);
+    border: none;
+    border-radius: 50%;
+}
+.right button:hover, .left button:hover{
+    background-color: rgb(175, 173, 173);
+    transform: scale(1.05);
+}
+
+/* responsive */
+@media screen and (max-width:991px) {
+    .content{
+        width: 100%;
+    }
+    .content-home{
+        width: 90%;
+    }
+    .home-body{
+        width: 100%;
+    }
+    .user-post{
+        flex-direction: column;
+    }
+    .post-info{
+        width: 100%;
+    }
+    .left{
+        width: 100%;
+    }
+    .section2{
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+    .more-info{
+        width: 100%;
+    }
+    .menu{
+        display: block;
+    }
+}
+@media screen and (max-width:320px) {
+    .fileupload{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:505px) {
+    .more-info{
+        display: none;
+    }
+    .moreinfo-mobile{
+        display: block;
+    }
+}
+
+
+.loader{
+    width: 100%;
+    height: 100vh;
+    z-index: 9999999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.508);
+}
+.spinner {
+    width: 56px;
+    height: 56px;
+    display: grid;
+    animation: spinner-plncf9 4s infinite;
+}
+
+ /* spinner */
+ .spinner::before,
+ .spinner::after {
+    content: "";
+    grid-area: 1/1;
+    border: 9px solid;
+    border-radius: 50%;
+    border-color: #a2a2a2 #a2a2a2 #0000 #0000;
+    mix-blend-mode: darken;
+    animation: spinner-plncf9 1s infinite linear;
+ }
+ 
+ .spinner::after {
+    border-color: #0000 #0000 #dbdcef #dbdcef;
+    animation-direction: reverse;
+ }
+ 
+ @keyframes spinner-plncf9 {
+    100% {
+       transform: rotate(1turn);
+    }
+ }
